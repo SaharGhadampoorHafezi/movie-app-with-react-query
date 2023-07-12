@@ -4,12 +4,11 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
-import Carousel from "react-material-ui-carousel";
 
 export default function ListItems({ overview, title, image }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+    <Card sx={{ maxWidth: 'auto', height: 200 }}>
+      <CardActionArea sx={{display: 'flex'}}>
         <CardMedia
           component="img"
           height="140"
@@ -26,9 +25,9 @@ export default function ListItems({ overview, title, image }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        {/* <Button size="small" color="primary">
           Share
-        </Button>
+        </Button> */}
       </CardActions>
     </Card>
   );

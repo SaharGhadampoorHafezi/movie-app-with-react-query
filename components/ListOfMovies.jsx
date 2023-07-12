@@ -6,6 +6,7 @@ import { useNowPlaying } from "../utiles/NowPlaying";
 import Carousel from "react-material-ui-carousel";
 import ListItems from "./ListItems";
 
+
 export default function ListOfMovies() {
   const upComings = useUpcomings();
   const topRated = useTopRated();

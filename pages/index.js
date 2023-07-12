@@ -11,6 +11,7 @@ import "@fontsource/roboto/700.css";
 import { useFetchMovie } from "../utiles/MovieFetch";
 import MyCarousel from "../components/myCarousel";
 import ListOfMovies from "../components/ListOfMovies";
+import SearchBar from "../components/SearchBar";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -35,6 +36,7 @@ export default function Home() {
         />
       </Head>
       <main>
+        <SearchBar />
        <MyCarousel />
        <ListOfMovies />
       </main>
